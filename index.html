@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <div class="container">
+      <h2>Registro al Curso de Programación</h2>
+      <p>Aprende a programar desde cero con nuestros cursos en línea o presenciales.</p>
+
+      <form id="registroForm">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" placeholder="Ej. Ana Torres" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" placeholder="Ej. ana@email.com" required>
+
+        <label for="curso">Selecciona tu curso:</label>
+        <select id="curso" required>
+          <option value="">-- Elige una opción --</option>
+          <option value="HTML y CSS">HTML y CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Desarrollo Web Full Stack">Desarrollo Web Full Stack</option>
+        </select>
+
+        <label>Modalidad:</label>
+        <div class="modalidad">
+          <label><input type="radio" name="modalidad" value="Presencial" required> Presencial</label>
+          <label><input type="radio" name="modalidad" value="Virtual" required> Virtual</label>
+        </div>
+
+        <label for="motivo">¿Por qué te interesa este curso?</label>
+        <textarea id="motivo" rows="3" placeholder="Escribe aquí..." required></textarea>
+
+        <button type="submit">Enviar registro</button>
+      </form>
+
+      <div id="resultado"></div>
+    </div>
+  </main>
+</body>
+</html>
