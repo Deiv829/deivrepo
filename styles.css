@@ -143,3 +143,11 @@ footer {
   color: white;
   font-size: 0.9rem;
 }
+body.dark {
+  --color-primario: #66a3ff;
+  --color-secundario: #003366;
+  --color-fondo: #1e1e1e;
+  --color-texto: #e0e0e0;
+  --color-card: #2a2a2a;
+  --sombra: 0 0 12px rgba(255, 255, 255, 0.05);
+}
