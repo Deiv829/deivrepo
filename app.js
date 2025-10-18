@@ -24,3 +24,12 @@ form.addEventListener("submit", (e) => {
 
   form.reset();
 });
+
+const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  const darkMode = body.classList.contains("dark");
+  themeToggle.textContent = darkMode ? " Modo Claro" : "Modo Oscuro";
+});
